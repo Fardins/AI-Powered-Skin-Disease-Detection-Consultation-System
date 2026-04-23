@@ -1,0 +1,1 @@
+use this link data on kaggle: https://www.kaggle.com/datasets/ismailpromus/skin-diseases-image-dataset
