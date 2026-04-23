@@ -30,12 +30,12 @@ col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
     uploaded_file = st.file_uploader(
-        "📤 Upload Image",
+        " Upload Image",
         type=["jpg", "jpeg", "png"]
     )
 
 # Generate button
-if st.button("🔍 Generate"):
+if st.button(" Generate"):
 
     if uploaded_file is not None:
         # Save image in session (for UI)
@@ -56,11 +56,11 @@ if st.button("🔍 Generate"):
         advice = generate_advice(disease)
         st.session_state.advice = advice
 
-        # ✅ Reset chat for new image
+        #  Reset chat for new image
         st.session_state.messages = []
 
     else:
-        st.warning("⚠️ Please upload an image first.")
+        st.warning(" Please upload an image first.")
 
 # Show results in 2 columns
 if st.session_state.disease:
@@ -68,16 +68,16 @@ if st.session_state.disease:
 
     # LEFT → Result + Advice
     with col1:
-        st.subheader("🔍 Detection Result")
+        st.subheader(" Detection Result")
         st.write(f"**Disease:** {st.session_state.disease}")
         st.write(f"**Confidence:** {st.session_state.confidence:.2f}")
 
-        st.subheader("💡 AI Medical Advice")
+        st.subheader(" AI Medical Advice")
         st.write(st.session_state.advice)
 
     # RIGHT → Image
     with col2:
-        st.subheader("🖼️ Uploaded Image")
+        st.subheader(" Uploaded Image")
         if st.session_state.image:
             st.image(st.session_state.image, width="stretch")
 
@@ -85,7 +85,6 @@ if st.session_state.disease:
 if st.session_state.disease:
 
     st.markdown("---")
-    st.subheader("💬 Ask More Questions")
 
     # Show previous messages
     for msg in st.session_state.messages:
@@ -121,6 +120,6 @@ Answer clearly and helpfully.
         st.session_state.messages.append({"role": "assistant", "content": answer})
 
 # Refresh button
-if st.button("🔄 Refresh"):
+if st.button(" Refresh"):
     st.session_state.clear()
     st.rerun()
