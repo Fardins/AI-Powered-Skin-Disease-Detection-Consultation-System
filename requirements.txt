@@ -1,0 +1,4 @@
+ultralytics
+langchain-groq
+python-dotenv
+streamlit
