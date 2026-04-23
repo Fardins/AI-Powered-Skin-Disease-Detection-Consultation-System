@@ -1,6 +1,26 @@
 # AI-Powered Skin Disease Detection & Consultation System
 
-A comprehensive deep learning application that detects skin diseases from images and provides AI-powered medical advice using LLMs.
+A comprehensive deep learning application that detects skin diseases from images and provides AI-powered medical advice using LLMs. This innovative platform leverages **state-of-the-art YOLOv11 computer vision** combined with **advanced LLM capabilities** to deliver intelligent medical insights. Built with modular architecture for scalability and maintainability, it serves as a bridge between patients and dermatological expertise. The system processes skin lesion images in real-time, providing instant disease classification with confidence metrics and personalized AI-generated medical recommendations. Perfect for healthcare applications, educational purposes, and preliminary self-assessment of skin conditions.
+
+###  Sample Skin Images from Dataset
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><img src="images/2.jpg" width="250" height="200" alt="Melanoma Sample"><br/><b>Melanoma</b></td>
+      <td align="center"><img src="images/5.jpg" width="250" height="200" alt="Melanocytic Nevi Sample"><br/><b>Melanocytic Nevi</b></td>
+      <td align="center"><img src="images/1.jpg" width="250" height="200" alt="Seborrheic Keratoses Sample"><br/><b>Seborrheic Keratoses</b></td>
+    </tr>
+  </table>
+</div>
+
+---
+
+##  Live Demo
+
+**Try the application online:** [ AI-Powered Skin Disease Detection System](https://ai-powered-skin-disease-detection-consultation-system.streamlit.app/)
+
+No installation required! Upload an image and get instant disease detection with AI medical advice.
 
 ---
 
