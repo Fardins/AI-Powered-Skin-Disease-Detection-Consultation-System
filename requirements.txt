@@ -1,4 +1,6 @@
 ultralytics
+langchain
 langchain-groq
+opencv-python-headless
 python-dotenv
 streamlit
