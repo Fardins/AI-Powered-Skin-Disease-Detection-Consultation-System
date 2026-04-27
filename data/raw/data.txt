@@ -1,0 +1,1 @@
+download data from kaggle use this link- https://www.kaggle.com/datasets/ismailpromus/skin-diseases-image-dataset
